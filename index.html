@@ -4,207 +4,182 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Birthday, Zohiiii! </title>
-  <meta name="description"
-    content="A birthday page for Zoha, from your non-favorite :) friend " />
+  <meta name="theme-color" content="#FFE4EE" />
+  <title>Happy Birthday, Princess</title>
+  <meta name="description" content="A birthday page for a princess, from Ahsan, your prince." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700;800;900&family=Dancing+Script:wght@600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,500;1,9..144,600&family=DM+Sans:wght@400;500;700&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <noscript>
+    <style>.letter-line { opacity: 1; transform: none; }</style>
+  </noscript>
 </head>
 
 <body>
 
-  <!-- ======= HERO SECTION ======= -->
-  <section id="hero" class="hero">
-    <div class="hero-blobs">
-      <div class="blob b1"></div>
-      <div class="blob b2"></div>
-      <div class="blob b3"></div>
-    </div>
+  <!-- Icons used across the page -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-heart" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+      </symbol>
+      <symbol id="i-crown" viewBox="0 0 120 80">
+        <path d="M10 62 L18 22 L42 44 L60 12 L78 44 L102 22 L110 62 Z" fill="#F2B544" />
+        <path d="M10 62 L18 22 L42 44 L60 12 L60 62 Z" fill="#F7CB6B" opacity="0.55" />
+        <rect x="10" y="60" width="100" height="14" rx="5" fill="#E09F2B" />
+        <circle cx="18" cy="21" r="6" fill="#F0608F" stroke="#fff" stroke-width="2" />
+        <circle cx="60" cy="11" r="7.5" fill="#F0608F" stroke="#fff" stroke-width="2" />
+        <circle cx="102" cy="21" r="6" fill="#F0608F" stroke="#fff" stroke-width="2" />
+        <circle cx="34" cy="67" r="3" fill="#FFF5F8" />
+        <circle cx="60" cy="67" r="3" fill="#FFF5F8" />
+        <circle cx="86" cy="67" r="3" fill="#FFF5F8" />
+      </symbol>
+    </defs>
+  </svg>
 
-    <div class="floating-emojis" aria-hidden="true">
-      <span class="fe" style="--x:8%;--delay:0s;--dur:7s">🎈</span>
-      <span class="fe" style="--x:18%;--delay:1.2s;--dur:8s">💛</span>
-      <span class="fe" style="--x:30%;--delay:0.5s;--dur:6.5s">✨</span>
-      <span class="fe" style="--x:45%;--delay:2s;--dur:9s">🌸</span>
-      <span class="fe" style="--x:60%;--delay:0.8s;--dur:7.5s">🎂</span>
-      <span class="fe" style="--x:72%;--delay:1.5s;--dur:8.5s">🎈</span>
-      <span class="fe" style="--x:84%;--delay:0.3s;--dur:6s">💛</span>
-      <span class="fe" style="--x:92%;--delay:2.5s;--dur:7s">✨</span>
+  <!-- ======= HERO ======= -->
+  <header id="hero" class="hero drip">
+    <div class="hero-hearts" aria-hidden="true">
+      <span class="fh" style="--x:8%;--s:18px;--dur:11s;--delay:0s"><svg viewBox="0 0 24 24"><use href="#i-heart" /></svg></span>
+      <span class="fh" style="--x:22%;--s:12px;--dur:9s;--delay:2.4s"><svg viewBox="0 0 24 24"><use href="#i-heart" /></svg></span>
+      <span class="fh" style="--x:38%;--s:20px;--dur:13s;--delay:1s"><svg viewBox="0 0 24 24"><use href="#i-heart" /></svg></span>
+      <span class="fh" style="--x:56%;--s:14px;--dur:10s;--delay:3.6s"><svg viewBox="0 0 24 24"><use href="#i-heart" /></svg></span>
+      <span class="fh" style="--x:70%;--s:22px;--dur:12s;--delay:0.6s"><svg viewBox="0 0 24 24"><use href="#i-heart" /></svg></span>
+      <span class="fh" style="--x:84%;--s:13px;--dur:9.5s;--delay:2s"><svg viewBox="0 0 24 24"><use href="#i-heart" /></svg></span>
+      <span class="fh" style="--x:93%;--s:17px;--dur:11.5s;--delay:4.4s"><svg viewBox="0 0 24 24"><use href="#i-heart" /></svg></span>
     </div>
 
     <div class="hero-content">
+      <div class="portrait">
+        <svg class="crown" viewBox="0 0 120 80" aria-hidden="true"><use href="#i-crown" /></svg>
+        <div class="portrait-frame">
+          <img id="portrait-img" src="princess.jpg" width="352" height="470"
+            alt="The birthday princess holding her birthday cake" />
+        </div>
+      </div>
+
       <h1 class="hero-title">
-        Happy Birthday
-        <span class="name-zoha">Zohiii!</span>
+        <span class="line">Happy Birthday,</span>
+        <span class="line">Princess</span>
       </h1>
 
       <p class="hero-tagline">
-        One more year of being effortlessly amazing, and putting up with me 💛
+        For the girl who carries two little worlds and still makes everyone feel loved.
       </p>
 
-      <div class="jasmine-hero-wrap">
-        <img src="pink_jasmine_zoha.png" alt="Pink Jasmine — Zoha's flower" class="jasmine-hero-img" />
-        <div class="jasmine-label">
-          <span class="jasmine-icon">🌸</span>
-          <span>Pink Jasmine <em>Zoha's Flower</em></span>
-        </div>
-      </div>
-
-      <div class="hero-hearts" aria-hidden="true">
-        <span class="hh hh1">💛</span>
-        <span class="hh hh2">💛</span>
-        <span class="hh hh3">💛</span>
-      </div>
-
-      <a href="#message" class="hero-cta">
-        Open your letter
-      </a>
+      <a href="#message" class="btn">Open your letter</a>
     </div>
+  </header>
 
-    <div class="scroll-bounce" aria-hidden="true">↓</div>
-  </section>
-
-  <!-- ======= LETTER SECTION ======= -->
-  <section id="message" class="letter-section">
-    <div class="section-flowers-top" aria-hidden="true">🌸🎈💛🎈🌸</div>
+  <!-- ======= LETTER ======= -->
+  <section id="message" class="letter-section drip">
     <div class="container">
-      <h2 class="section-heading">A Little Letter 💌</h2>
+      <h2 class="section-heading">A letter for you</h2>
+      <p class="section-sub">written with all my heart, just for you</p>
 
       <div class="letter-card" id="letter-card">
-        <div class="letter-stamp">🎂</div>
-        <div class="letter-to">Dear <span class="letter-name">Zohi,</span></div>
+        <div class="seal" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-heart" /></svg></div>
+
+        <p class="letter-to">Dear Princess,</p>
 
         <div class="letter-body">
-          <p class="letter-line" style="--i:0">So it's officially your day today.</p>
-          <p class="letter-line" style="--i:1">At least one day a year I'm legally required to be extra nice to you. Kidding, main pura saal bhi nice h rahunga.</p>
-          <p class="letter-line" style="--i:2">You've spent the whole year being the level-headed one while i set things on fire and figure it out later. <em>Somehow</em> we still work. 🤝</p>
-          <p class="letter-line" style="--i:3">You're like a pink jasmine, soft, rare, and once you're around... sachiiii</p>
-          <p class="letter-line" style="--i:4">And don't be harsh with yourself plz, i can understand the situations but still try to be nice with yourself. 🌸</p>
-          <p class="letter-line" style="--i:5">Here's to another year of you being incredible and me being lucky enough to call you my best friend. Happy Birthday, <strong>Zohiii</strong> mzy krooo have funn 💛</p>
+          <p class="letter-line" style="--i:0">Happy Birthday. Today the world celebrates the girl who gives and gives, and almost never asks for anything back.</p>
+          <p class="letter-line" style="--i:1">You are a mama to two little hearts, and you carry their whole world on your shoulders. You do it alone, and you still smile for them.</p>
+          <p class="letter-line" style="--i:2">I see it all. The early mornings, the late nights, the worry you hide, the strength you make look easy. <strong>I feel your hard work</strong>, even when you never say a word about it.</p>
+          <p class="letter-line" style="--i:3">I really can't see you sad. It hurts me too. <strong>Your happiness matters to me</strong> more than I know how to say.</p>
+          <p class="letter-line" style="--i:4">I pray your kids grow up healthy, kind and proud, and that they always know how lucky they are to have you. One day they will look back and understand everything you did for them.</p>
+          <p class="letter-line" style="--i:5">Until then, let me remind you: you are doing beautifully. You deserve love, rest, laughter, and someone who makes your days lighter.</p>
+          <p class="letter-line" style="--i:6">Happy Birthday, my princess. Stay happy, always.</p>
         </div>
 
-        <div class="letter-sign">— Your forever chaotic bestie 💛</div>
-
-        <div class="letter-doodles" aria-hidden="true">🎈 ✨ 🌸 🎂 💛</div>
+        <div class="letter-sign">
+          <span class="sign-name">Ahsan</span>
+          <span class="sign-role">your prince</span>
+        </div>
       </div>
     </div>
-    <div class="section-flowers-bottom" aria-hidden="true">💛🎈✨🎈💛</div>
   </section>
 
   <!-- ======= MAKE A WISH ======= -->
-  <section id="wish" class="wish-section">
+  <section id="wish" class="wish-section drip">
     <div class="container wish-container">
-      <h2 class="section-heading">Make a Wish</h2>
-      <p class="section-sub">close your eyes, make it a good one 🕯️</p>
+      <h2 class="section-heading">Make a wish</h2>
+      <p class="section-sub">close your eyes and make it a big one</p>
 
       <button type="button" class="candle-btn" id="candle-btn" aria-pressed="false">
-        <svg class="candle-svg" id="candle-svg" viewBox="0 0 120 200" width="120" height="200" aria-hidden="true">
-          <ellipse cx="60" cy="188" rx="46" ry="10" fill="var(--pink-lt)" />
-          <rect x="30" y="70" width="60" height="118" rx="10" fill="var(--pink)" />
-          <rect x="30" y="70" width="60" height="16" fill="var(--pink-dk)" opacity="0.5" />
-          <rect x="30" y="102" width="60" height="16" fill="var(--pink-dk)" opacity="0.5" />
-          <rect x="30" y="134" width="60" height="16" fill="var(--pink-dk)" opacity="0.5" />
-          <rect x="30" y="166" width="60" height="16" fill="var(--pink-dk)" opacity="0.5" />
-          <rect x="57" y="48" width="6" height="26" rx="3" fill="#5a4a3a" />
-          <g id="flame-group" class="flame-group">
-            <path id="flame" class="flame" d="M60 12c9 12 13 21 13 29a13 13 0 1 1-26 0c0-8 4-17 13-29z" fill="url(#flameGrad)" />
+        <svg class="candle-svg" viewBox="0 0 120 200" width="110" height="183" aria-hidden="true">
+          <ellipse class="c-plate" cx="60" cy="188" rx="46" ry="10" />
+          <rect class="c-body" x="30" y="70" width="60" height="118" rx="10" />
+          <rect class="c-stripe" x="30" y="86" width="60" height="14" />
+          <rect class="c-stripe" x="30" y="116" width="60" height="14" />
+          <rect class="c-stripe" x="30" y="146" width="60" height="14" />
+          <rect class="c-wick" x="57" y="48" width="6" height="26" rx="3" />
+          <g class="flame-group">
+            <path d="M60 12c9 12 13 21 13 29a13 13 0 1 1-26 0c0-8 4-17 13-29z" fill="url(#flameGrad)" />
           </g>
           <defs>
             <linearGradient id="flameGrad" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stop-color="#FFE58A" />
-              <stop offset="55%" stop-color="var(--gold)" />
-              <stop offset="100%" stop-color="var(--pink-dk)" />
+              <stop offset="55%" stop-color="#F2B544" />
+              <stop offset="100%" stop-color="#F0608F" />
             </linearGradient>
           </defs>
         </svg>
         <span class="candle-hint" id="candle-hint">tap to blow it out</span>
       </button>
 
-      <p class="wish-result" id="wish-result">Whatever you wished for, I hope it comes true 💛</p>
+      <p class="wish-result" id="wish-result" aria-live="polite">Whatever you wished for, I pray it comes true. Ameen.</p>
       <button type="button" class="relight-btn" id="relight-btn" hidden>light it again</button>
     </div>
   </section>
 
-  <!-- ======= MEMORY WALL ======= -->
-  <section id="memories" class="memories-section">
-    <div class="container">
-      <h2 class="section-heading">You, from my POV</h2>
-      <p class="section-sub">it's a little biased though 🤭 💛</p>
+  <!-- ======= TIRED DAYS ======= -->
+  <section id="reminders" class="reminder-section drip">
+    <div class="container reminder-container">
+      <h2 class="section-heading">For the tired days</h2>
+      <p class="section-sub">tap the heart whenever you need a reminder</p>
 
-      <div class="polaroid-wall">
+      <button type="button" class="heart-btn" id="heart-btn" aria-label="Show me a reminder">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-heart" /></svg>
+      </button>
 
-        <div class="polaroid" style="--rot:-4deg; --delay:0s">
-          <div class="polaroid-photo">
-            <img src="pink_jasmine_zoha.png" alt="Zoha as a flower" />
-          </div>
-          <div class="polaroid-tag">🌸 As a Flower</div>
-          <div class="polaroid-label">your flower, obviously</div>
-        </div>
-
-        <div class="polaroid" style="--rot:3deg; --delay:0.2s">
-          <div class="polaroid-photo">
-            <img src="zoha_animal_cat.png" alt="Zoha as an animal" />
-          </div>
-          <div class="polaroid-tag">🐾 As an Animal</div>
-          <div class="polaroid-label">cuter than the real thing 🥺</div>
-        </div>
-
-        <div class="polaroid" style="--rot:-2deg; --delay:0.4s">
-          <div class="polaroid-photo">
-            <img src="zoha_place_fuji.png" alt="Zoha as a place" />
-          </div>
-          <div class="polaroid-tag">🗺️ As a Place</div>
-          <div class="polaroid-label">breathtaking, kind of like you</div>
-        </div>
-
-        <div class="polaroid" style="--rot:5deg; --delay:0.6s">
-          <div class="polaroid-photo">
-            <img src="zoha_celebrity.png" alt="Zoha as a celebrity" />
-          </div>
-          <div class="polaroid-tag">⭐ As a Celebrity</div>
-          <div class="polaroid-label">you're prettier, always have been</div>
-        </div>
-
-      </div>
+      <p class="reminder-text" id="reminder-text" aria-live="polite">Tired? Sad? Tap the heart.</p>
+      <p class="reminder-hint" id="reminder-hint">&nbsp;</p>
     </div>
   </section>
 
   <!-- ======= FINALE ======= -->
-  <section id="finale" class="finale-section">
-    <div class="finale-blobs">
-      <div class="blob fb1"></div>
-      <div class="blob fb2"></div>
-    </div>
-    <div class="container">
-      <div class="jasmine-finale-wrap">
-        <img src="pink_jasmine_zoha.png" alt="Pink Jasmine" class="jasmine-finale-img" />
+  <section id="finale" class="finale-section drip">
+    <div class="container finale-container">
+      <div class="crown-family" aria-hidden="true">
+        <svg class="finale-crown" viewBox="0 0 120 80"><use href="#i-crown" /></svg>
+        <div class="kid-hearts">
+          <svg viewBox="0 0 24 24"><use href="#i-heart" /></svg>
+          <svg viewBox="0 0 24 24"><use href="#i-heart" /></svg>
+        </div>
       </div>
 
-      <h2 class="finale-title">Happy Birthday 💛</h2>
+      <h2 class="finale-title">Stay happy, Princess</h2>
+
       <p class="finale-msg">
-        Zoha, you're one in a million.<br />
-        Like a pink jasmine, rare, beautiful, and unforgettable.<br />
-        May Allah make you happy, will make your heart filled with love, Ameeen. 🌸
+        May your kids grow up strong, kind and proud of the mama who gave them everything.
       </p>
-
-      <div class="finale-floats" aria-hidden="true">
-        <span class="ff" style="--x:10%;--d:0s">💛</span>
-        <span class="ff" style="--x:25%;--d:0.3s">🎈</span>
-        <span class="ff" style="--x:45%;--d:0.6s">💛</span>
-        <span class="ff" style="--x:65%;--d:0.9s">✨</span>
-        <span class="ff" style="--x:80%;--d:1.2s">🎈</span>
-        <span class="ff" style="--x:93%;--d:1.5s">💛</span>
-      </div>
+      <p class="finale-msg">
+        May Allah fill your life with love, peace and a happiness that never leaves you. Ameen.
+      </p>
+      <p class="finale-msg finale-sign">
+        Happy Birthday, from Ahsan, your prince.
+      </p>
     </div>
   </section>
 
   <!-- ======= FOOTER ======= -->
   <footer class="site-footer">
-    <p>Made with 💛 by me 😁</p>
+    <p>Made with <svg class="footer-heart" viewBox="0 0 24 24" aria-label="love"><use href="#i-heart" /></svg> by Ahsan</p>
   </footer>
 
   <script src="app.js"></script>
